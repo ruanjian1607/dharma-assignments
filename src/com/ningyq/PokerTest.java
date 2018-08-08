@@ -1,4 +1,4 @@
-package java4;
+package com.ningyq;
 
 import java.util.*;
 
