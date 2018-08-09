@@ -1,4 +1,4 @@
-package com.tarena.shoot;
+package com.Burningjungle.shoot;
 
 /**
  * 子弹类：是飞行物

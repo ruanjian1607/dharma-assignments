@@ -1,4 +1,4 @@
-package com.tarena.shoot;
+package com.Burningjungle.shoot;
 
 import java.util.Random;
 

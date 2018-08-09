@@ -1,4 +1,4 @@
-package com.tarena.shoot;
+package com.Burningjungle.shoot;
 
 import java.awt.image.BufferedImage;
 
@@ -10,7 +10,7 @@ public class Hero extends FlyingObject{
     private int life;
 
     public Hero(){
-        life = 3;
+        life = 1000;
         doubleFire = 0;
         this.image = ShootGame.hero0;
         images = new BufferedImage[]{ShootGame.hero0,ShootGame.hero1};

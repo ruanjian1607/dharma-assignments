@@ -1,4 +1,4 @@
-package com.tarena.shoot;
+package com.Burningjungle.shoot;
 
 /**
  * 敌人，可以有分数

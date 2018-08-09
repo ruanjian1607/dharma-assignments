@@ -1,4 +1,4 @@
-package com.tarena.shoot;
+package com.Burningjungle.shoot;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.TimerTask;

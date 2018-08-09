@@ -1,6 +1,4 @@
-package com.tarena.shoot;
-
-import com.tarena.shoot.ShootGame;
+package com.Burningjungle.shoot;
 
 /**
  * 敌飞机：是飞行物，也是敌人
