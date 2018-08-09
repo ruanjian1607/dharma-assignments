@@ -1,3 +1,5 @@
+package com.ningyq;
+
 import java.util.*;
 
 class Product {

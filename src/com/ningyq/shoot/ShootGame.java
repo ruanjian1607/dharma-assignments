@@ -53,15 +53,15 @@ public class ShootGame extends JPanel {
 
     static {
         try {
-            background = ImageIO.read(ShootGame.class.getResource("background.png"));
-            start = ImageIO.read(ShootGame.class.getResource("start.png"));
-            airplane = ImageIO.read(ShootGame.class.getResource("airplane.png"));
-            bee = ImageIO.read(ShootGame.class.getResource("bee.png"));
-            bullet = ImageIO.read(ShootGame.class.getResource("bullet.png"));
-            hero0 = ImageIO.read(ShootGame.class.getResource("hero0.png"));
-            hero1 = ImageIO.read(ShootGame.class.getResource("hero1.png"));
-            pause = ImageIO.read(ShootGame.class.getResource("pause.png"));
-            gameover = ImageIO.read(ShootGame.class.getResource("gameover.png"));
+            background = ImageIO.read(ShootGame.class.getResource("images/background.png"));
+            start = ImageIO.read(ShootGame.class.getResource("images/start.png"));
+            airplane = ImageIO.read(ShootGame.class.getResource("images/airplane.png"));
+            bee = ImageIO.read(ShootGame.class.getResource("images/bee.png"));
+            bullet = ImageIO.read(ShootGame.class.getResource("images/bullet.png"));
+            hero0 = ImageIO.read(ShootGame.class.getResource("images/hero0.png"));
+            hero1 = ImageIO.read(ShootGame.class.getResource("images/hero1.png"));
+            pause = ImageIO.read(ShootGame.class.getResource("images/pause.png"));
+            gameover = ImageIO.read(ShootGame.class.getResource("images/gameover.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
