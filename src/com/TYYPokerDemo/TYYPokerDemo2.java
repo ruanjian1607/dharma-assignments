@@ -1,4 +1,4 @@
-﻿package PokerGameDemo2;
+﻿package TYYPokerDemo;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,7 +11,7 @@ import java.util.TreeSet;
  *	2.创建ArrayList来存储序列，用于发牌
  *	3.看牌de方法
 */
-public class PokerDemo2 {
+public class TYYPokerDemo2 {
 	public static void main(String[] args) {
 		//1.创建HashMap存储内容
 		HashMap<Integer,String> hm = new HashMap<Integer,String>();
