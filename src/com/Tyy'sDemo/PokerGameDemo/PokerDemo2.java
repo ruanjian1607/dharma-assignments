@@ -1,28 +1,28 @@
-ï»¿package TYYPokerDemo;
+package PokerGameDemo;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.TreeSet;
 
-/*éœ€æ±‚ï¼šéšæœºå‘ç‰Œï¼Œå¹¶ä½¿çœ‹ç‰Œçš„ç»“æœæœ‰åºæ’åˆ—
- *åˆ†æï¼šæœ€åçœ‹ç‰Œçš„ç»“æœè¦ç”¨TreeSetæ¥å­˜å‚¨
- *	1.åˆ›å»ºHashMapé›†åˆæ¥å­˜å‚¨åºå·å’Œå¯¹åº”ç‰Œçš„å†…å®¹
- *	2.åˆ›å»ºArrayListæ¥å­˜å‚¨åºåˆ—ï¼Œç”¨äºå‘ç‰Œ
- *	3.çœ‹ç‰Œdeæ–¹æ³•
+/*ĞèÇó£ºËæ»ú·¢ÅÆ£¬²¢Ê¹¿´ÅÆµÄ½á¹ûÓĞĞòÅÅÁĞ
+ *·ÖÎö£º×îºó¿´ÅÆµÄ½á¹ûÒªÓÃTreeSetÀ´´æ´¢
+ *	1.´´½¨HashMap¼¯ºÏÀ´´æ´¢ĞòºÅºÍ¶ÔÓ¦ÅÆµÄÄÚÈİ
+ *	2.´´½¨ArrayListÀ´´æ´¢ĞòÁĞ£¬ÓÃÓÚ·¢ÅÆ
+ *	3.¿´ÅÆÓĞÌØÓĞµÄ·½·¨
 */
-public class TYYPokerDemo2 {
+public class PokerDemo2 {
 	public static void main(String[] args) {
-		//1.åˆ›å»ºHashMapå­˜å‚¨å†…å®¹
+		//1.´´½¨HashMap´æ´¢ÄÚÈİ
 		HashMap<Integer,String> hm = new HashMap<Integer,String>();
-		//2.åˆ›å»ºArrayListå­˜å‚¨åºå·
+		//2.´´½¨ArrayList´æ´¢ĞòºÅ
 		ArrayList<Integer> array = new ArrayList<Integer>();
-		//3.å­˜ç‰Œ
-		//é¦–å…ˆè¦æœ‰colorå’Œnumberæ•°ç»„
-		String[] color = {"â™ ","â™¥","â™¦","â™£"};
+		//3.´æÅÆ
+		//Ê×ÏÈÒªÓĞcolorºÍnumberÊı×é
+		String[] color = {"ºÚÌÒ","ºìÌÒ","·½Æ¬","Ã·»¨"};
 		String[] number = {"3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K","A","2"};
 		int index = 0;
-		//ä»¥3ä½œä¸ºæœ€å°å€¼å¼€å§‹æ‹¼æ¥å­—ç¬¦ä¸²å¹¶å­˜å…¥ç‰Œ
+		//ÒÔ3×÷Îª×îĞ¡Öµ¿ªÊ¼Æ´½Ó×Ö·û´®²¢´æÈëÅÆ
 		for(String n : number){
 			for(String c : color){
 				String s = c.concat(n);
@@ -31,19 +31,19 @@ public class TYYPokerDemo2 {
 				index++;
 			}
 		}
-		//å¤§å°ç‹è¿›å…¥ç‰Œç›’
-		hm.put(index,"å°ç‹");
+		//´óĞ¡Íõ½øÈëÅÆºĞ
+		hm.put(index,"Ğ¡Íõ");
 		array.add(index);
 		index++;
-		hm.put(index,"å¤§ç‹");
+		hm.put(index,"´óÍõ");
 		array.add(index);
 		
 		/*System.out.println(hm);
 		System.out.println(array);*/
 		
-		//4.æ´—ç‰Œ
+		//4.Ï´ÅÆ
 		Collections.shuffle(array);
-		//5.å‘ç‰Œ
+		//5.·¢ÅÆ
 		TreeSet<Integer> p1 = new TreeSet<Integer>();
 		TreeSet<Integer> p2 = new TreeSet<Integer>();
 		TreeSet<Integer> p3 = new TreeSet<Integer>();
@@ -60,15 +60,15 @@ public class TYYPokerDemo2 {
 				p3.add(array.get(i));
 			}
 		}
-		//6.çœ‹ç‰Œ
-		LookPoker("ç”²",p1,hm);
-		LookPoker("ä¹™",p2,hm);
-		LookPoker("ä¸™",p3,hm);
-		LookPoker("ç”µåº•ç‰Œ",dp,hm);
+		//6.¿´ÅÆ
+		LookPoker("¼×",p1,hm);
+		LookPoker("ÒÒ",p2,hm);
+		LookPoker("±û",p3,hm);
+		LookPoker("µ×ÅÆ",dp,hm);
 	}
-	//è¦å†™ä¸ªçœ‹ç‰Œæ–¹æ³•
+	//ÒªĞ´¸ö¿´ÅÆ·½·¨
 	public static  void LookPoker(String name,TreeSet<Integer> ts,HashMap<Integer,String> hm){
-		System.out.println(name+"çš„ç‰Œæ˜¯ï¼š");
+		System.out.println(name+"µÄÅÆÊÇ£º");
 		for(Integer key: ts){
 			String value = hm.get(key);
 			System.out.print(value+" ");
@@ -76,4 +76,3 @@ public class TYYPokerDemo2 {
 		System.out.println();
 	}
 }
-
