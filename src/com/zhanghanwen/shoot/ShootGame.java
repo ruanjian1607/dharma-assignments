@@ -45,15 +45,15 @@ public class ShootGame extends JPanel{
     }
     static {
         try{
-            background = ImageIO.read(ShootGame.class.getResource("background.png"));
-            airplane = ImageIO.read(ShootGame.class.getResource("airplane.png"));
-            bee = ImageIO.read(ShootGame.class.getResource("bee.png"));
-            bullet = ImageIO.read(ShootGame.class.getResource("bullet.png"));
-            hero0 = ImageIO.read(ShootGame.class.getResource("hero0.png"));
-            hero1 = ImageIO.read(ShootGame.class.getResource("hero1.png"));
-            pause = ImageIO.read(ShootGame.class.getResource("pause.png"));
-            gameover = ImageIO.read(ShootGame.class.getResource("gameover.png"));
-            start = ImageIO.read(ShootGame.class.getResource("start.png"));
+            background = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/imagebackground.png"));
+            airplane = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/airplane.png"));
+            bee = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/bee.png"));
+            bullet = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/bullet.png"));
+            hero0 = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/hero0.png"));
+            hero1 = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/hero1.png"));
+            pause = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/pause.png"));
+            gameover = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/gameover.png"));
+            start = ImageIO.read(ShootGame.class.getResource("/Users/macos/Desktop/myrepo/dharma-assignments/src/com/zhanghanwen/shoot/image/start.png"));
         }catch (Exception e){
             e.printStackTrace();
         }
