@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Commoditys implements Iterator {
-    List<Commodity> commodities = new ArrayList<>();
+public class Commoditys implements Iterable{
+    public List<Commodity> commodities = new ArrayList<>();
 
     public Commoditys() {
         commodities.add(new Commodity("นþธ๙ด๏หน",1,30,40));
@@ -31,13 +31,9 @@ public class Commoditys implements Iterator {
 
     }
 
-    @Override
-    public boolean hasNext() {
-        return false;
-    }
 
     @Override
-    public Object next() {
-        return null;
+    public Iterator iterator() {
+        return commodities.iterator();
     }
 }
