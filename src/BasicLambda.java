@@ -6,7 +6,7 @@ import java.util.List;
 public class BasicLambda {
 
     public static int sumWithCondition(List<Integer> numbers, Predicate predicate){
-        numbers.forEach()
+        numbers.forEach();
     }
 
     public static void main(String[] args) {
